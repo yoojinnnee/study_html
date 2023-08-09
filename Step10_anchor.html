@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Step10_anchor.html</title>
+    <style>
+        .container{
+            width: 768px;
+            margin: 0 auto;
+        }
+        .card{
+            border: 1px solid #953232;
+            border-radius: 10px;
+            width: 300px;
+        }
+        /* 
+            선택자에서 한칸 띄우기는 자손 선택자 이다 
+            class 속성의 값이 card 인 요소의 자손 중에서 img 요소를 선택 
+        */
+        .card img{
+            max-width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>a(anchor) 요소는 하이퍼 링크, 책갈피, javascript 등을 수행할때 사용한다.</h1>
+        <a href="hello.html">눌러보셈</a>
+        <br>
+        <a href="https://daum.net">daum 으로 이동</a>
+        <br>
+        <!-- 이미지에 링크 걸기 -->
+        <a href="hello.html" title="hello.html 페이지로 이동"><img src="images/rabbit2.png"></a>
+        <br>
+        <!--
+            inline 요소는 원래 block 요소를 자식 요소로 가질수 없다.
+            단, a 요소만 예외적으로 div 같은 블럭요소를 자식 요소로 가질수 있다. 
+        -->
+        <a href="hello.html" title="hello.html 페이지로 이동">
+            <div class="card">
+                <h3>어쩌구 저쩌구...</h3>
+                <p>
+                    <img src="images/rabbit_1.png">
+                    <br>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita animi unde explicabo! Ab illo id aliquam dignissimos quam debitis soluta eum dolores sint provident, ducimus, nobis obcaecati, qui modi recusandae.
+                </p>
+            </div>
+        </a>
+    </div>
+</body>
+</html>

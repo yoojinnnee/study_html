@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Step08_table.html</title>
+    <style>
+        .my-table{
+             /* table 경계선 사이의 공간 없애기 */
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+<body>
+    <h1>표(table) 형식으로 정보를 출력하기</h1>
+    <table>
+        <!-- 
+            tr 요소 하나는 행 하나 의미 
+            tr 의 자식요소로 th 나 td 가 오는데 해당 요소의 갯수가 컬럼의 개수 결정
+        -->
+        <tr>
+            <th>번호</th>
+            <th>이름</th>
+            <th>주소</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>유진</td>
+            <td>영국</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>꼼이</td>
+            <td>멍멍</td>
+        </tr>
+    </table>
+    <table border="1" class="my-table">
+        <tr>
+            <th>번호</th>
+            <th>이름</th>
+            <th>주소</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>유진</td>
+            <td>영국</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>꼼이</td>
+            <td>멍멍</td>
+        </tr>
+    </table>
+</body>
+</html>

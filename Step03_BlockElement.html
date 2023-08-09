@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- html 요소는 head 요소와 body 요소를 자식 요소로 가지고 있다-->    
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Step03_BlockElement.html</title>
+    <style>
+        /* 요소명 선택자 */
+        div{
+            color: blue;
+        }
+        /* 클래스 선택자 */
+        .my-class{
+            background-color: antiquewhite;
+        }
+        /* 아이디 선택자 */
+        #one{
+            font-size: 30px;
+            font-weight: bold;
+        }
+        /* 아이디가 two 인 요소의 자식 중에서 img 를 선택 */
+        #two > img{
+            width: 200px;
+        }
+        #three > img{
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <!-- body 요소는 여러개의 div 를 자식 요소로 가지고 있다-->
+    <div>div 요소는 문단을 나타낼때 사용</div>
+    <div class="my-class">문단에 해당하는 것은 문자열 뿐 아니라 다른 여러가지 요소도 될 수 있다.</div>
+    <div class="my-class" id="one">div 요소는 폭을 100% 차지하는 block 요소</div>
+    <div id="two">
+        <!-- 이 div 요소는 두개의 img 를 자식 요소로 가지고 있다-->
+        <img src="images/cake.jpg">
+        <img src="images/cake.jpg">
+    </div>
+    <div id="three">
+        <img src="images/dog.jpg">
+        <img src="images/dog.jpg">
+    </div>
+</body>
+</html>
